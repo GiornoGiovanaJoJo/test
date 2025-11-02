@@ -1,0 +1,111 @@
+.header {
+  font-family: $heading-font;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: 5;
+  pointer-events: none;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  &__logo-link {
+    margin-right: 8px;
+    pointer-events: auto;
+  }
+
+  .app-about-us {
+    pointer-events: auto;
+    margin-right: auto;
+  }
+
+  &__callback {
+    display: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 12px;
+    pointer-events: auto;
+
+    &:hover {
+      background-color: white;
+      border-radius: 100px;
+    }
+  }
+
+  &__phone-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 8px;
+    padding: 8px 12px;
+    pointer-events: auto;
+
+    &:hover {
+      background-color: white;
+      border-radius: 100px;
+    }
+  }
+
+  &__burger {
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: .2s;
+    pointer-events: auto;
+
+    &:hover {
+      background-color: white;
+    }
+
+    span {
+      width: 15px;
+      display: block;
+      height: 2px;
+      background-color: var(--text-color);
+      position: relative;
+      box-shadow: 0 -5px var(--text-color), 0 5px var(--text-color);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+
+    &__wrapper {
+      padding-top: 64px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    &__phone-link,
+    &__callback {
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 12px;
+      margin-left: 8px;
+      padding: 12px 16px;
+    }
+
+    &__burger {
+      margin-left: 24px;
+      background-color: transparent;
+      width: 56px;
+      height: 56px;
+
+      span {
+        width: 24px;
+        height: 3px;
+        box-shadow: 0 -7px var(--text-color), 0 7px var(--text-color);
+      }
+    }
+  }
+}

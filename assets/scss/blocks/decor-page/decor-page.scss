@@ -1,0 +1,85 @@
+.decor-page {
+  display: none;
+  pointer-events: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__bottom,
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    // padding-left: 64px;
+    // padding-right: 64px;
+  }
+
+  &__bottom {
+    align-items: flex-end;
+    .decor-page__corner {
+      transform: rotate(-90deg);
+      &--right{
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__corner {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-top: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    opacity: .3;
+
+    &--right {
+      border-left: none;
+      border-right: 1px solid var(--text-color);
+    }
+  }
+
+  &__line{
+    position: relative;
+    background-color: var(--text-color);
+    opacity: .2;
+    width: 30%;
+    height: 1px;
+    &:after,
+    &:before{
+      border: 3px solid transparent; /* Прозрачные границы */
+      content: '';
+      position: absolute; /* Абсолютное позиционирование */
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    &:before{
+      left: 0;
+      border-left: 10px solid var(--text-color); /* Добавляем треугольник */
+    }
+    &:after{
+      right: 0;
+      border-right: 10px solid var(--text-color); /* Добавляем треугольник */
+    }
+  }
+
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}

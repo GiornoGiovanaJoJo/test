@@ -1,0 +1,9 @@
+.services {
+  @include max-w-md {
+    height: auto;
+    .content-page__wrapper {
+      height: auto;
+      overflow: visible;
+    }
+  }
+}

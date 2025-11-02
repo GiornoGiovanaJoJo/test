@@ -1,0 +1,115 @@
+.clients {
+  padding-top: 178px;
+
+  @include max-h-md {
+    padding-top: 52px;
+  }
+
+  &__header {
+    margin-bottom: 32px;
+  }
+
+  &__logo {
+    max-width: 100px;
+    object-fit: cover;
+  }
+
+  &__list {
+    margin-top: 16px;
+  }
+
+  &__item {
+    position: relative;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    transition: .2s;
+    cursor: default;
+    &:before {
+      display: inline-block;
+      content: "#";
+      margin-right: 4px;
+      transition: .2s;
+    }
+
+    &:hover {
+      &::before {
+        color: var(--title-color);
+      }
+    }
+  }
+
+  &__h2 {
+    max-width: 90%;
+  }
+
+  &__slider-wrapper {
+    max-height: 70px;
+    overflow: hidden;
+
+    @include max-w-md {
+      max-width: 348px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: none;
+    padding-top: 0;
+
+    &__wrapper{
+      padding-top: calc(var(--top-padding-section) + var(--top-padding-wrapper));
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 280px;
+      padding-left: 56px;
+
+      @include max-h-s {
+        padding-bottom: 90px !important;
+      }
+
+      @include max-h-md {
+        padding-bottom: 140px;
+      }
+    }
+
+    &__header{
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 32px;
+    }
+    &__logo {
+      max-width: 200px;
+    }
+    &__slider-wrapper{
+      margin-left: 32px;
+      max-width: 648px;
+      max-height: 140px;
+    }
+    &__title{
+      margin-bottom: 0;
+    }
+    &__h2{
+      margin-bottom: 17px;
+    }
+    &__list{
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    &__item{
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  @include min-h-xl {
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.error-page {
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 63.37%, #ECEDF1 100%);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 607px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__subtitle {
+      margin-bottom: 34px;
+    }
+  }
+}

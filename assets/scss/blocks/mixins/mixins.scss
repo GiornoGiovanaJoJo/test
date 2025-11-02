@@ -1,0 +1,167 @@
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: #FAF8F6;
+    border-radius: 18px;
+
+    .mr-2 {
+      margin-right: 8px;
+    }
+  }
+
+  &__item {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 16px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__list {
+      padding: 8px 16px;
+    }
+    &__item {
+      margin-right: 16px;
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+.contacts-links {
+  display: inline-flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 16px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__item {
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+.back {
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 12px;
+  padding-left: 8px;
+  margin-left: -8px;
+
+  &:hover {
+    border-radius: 100px;
+    background-color: white;
+  }
+
+  &__text {
+    font-family: var(--link-font);
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .icon {
+    margin-right: 8px;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 32px;
+    &__text {
+      font-size: 12px;
+    }
+    .icon {
+      margin-right: 12px;
+    }
+  }
+}
+
+.accordion {
+  border-top: 1px solid #E0DCE7;
+
+  &.open {
+    .accordion__arrow-wrapper {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+  }
+
+  &__title {
+    padding-right: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: var(--heading-font);
+  }
+
+  &__arrow-wrapper {
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  &__arrow {
+    width: 14px;
+    height: 14px;
+  }
+
+  &__body {
+    padding-top: 16px;
+    display: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__head {
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+    &__arrow {
+      width: 16px;
+      height: 16px;
+      margin-top: .5em;
+    }
+
+  }
+}

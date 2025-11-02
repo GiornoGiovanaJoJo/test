@@ -1,0 +1,127 @@
+.feedback {
+  position: relative;
+  &__bg-one{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+
+    @include max-w-md {
+      display: none;
+    }
+  }
+  &__bg-two{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+
+    @include max-w-md {
+      display: none;
+    }
+  }
+
+  &__wrapper{
+    padding-top: 178px;
+  }
+
+  &__title-wrapper{
+    max-width: 700px;
+    margin-bottom: 32px;
+  }
+  &__soc-wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    h4{
+      width: 100%;
+    }
+    .social__list{
+      background-color: transparent;
+      padding-left: 0;
+    }
+    .social__item{
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md){
+    &__wrapper{
+      padding-top: calc(var(--top-padding-section) + var(--top-padding-wrapper));
+      height: 100vh;
+      padding-left: 56px;
+    }
+
+    &__title-wrapper {
+      margin-bottom: 34px;
+    }
+
+    &__bg-one{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      user-select: none;
+      pointer-events: none;
+      align-items: center;
+      display: flex;
+
+      img{
+        height: 100%;
+        max-height: 590px;
+        width: auto;
+      }
+    }
+
+    &__bg-two{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: inline-flex;
+      justify-content: flex-end;
+      align-items: center;
+      user-select: none;
+      pointer-events: none;
+
+      picture{
+        display: inline-flex;
+      }
+
+      img{
+        height: 100%;
+        width: auto;
+        display: inline-block;
+        margin-left: auto;
+        max-height: 590px;
+        width: auto;
+      }
+    }
+
+    &__soc-wrapper{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h4{
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 8px;
+      }
+
+    }
+
+    .social__list{
+      padding-left: 16px;
+    }
+
+    .social__item{
+      margin-right: 16px;
+      img{
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

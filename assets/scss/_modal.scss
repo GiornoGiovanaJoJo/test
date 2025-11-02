@@ -1,0 +1,38 @@
+.close-button {
+  z-index: 9;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::before,
+  &::after {
+    content: '';
+    background: #000;
+    display: block;
+    width: 16px;
+    height: 2px;
+    position: absolute;
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+  
+  @include max-w-md {
+    width: 16px;
+    height: 16px;
+
+    &::before,
+    &::after {
+      width: 10px;
+      height: 1px;
+    }
+  }
+}

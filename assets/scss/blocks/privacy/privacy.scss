@@ -1,0 +1,36 @@
+.privacy {
+  padding-top: var(--top-padding-section);
+
+  &__wrapper {
+    height: auto;
+  }
+
+  .h2, h3 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  @include media-breakpoint-up(md){
+    padding-top: var(--top-padding-section);
+    &__wrapper {
+      padding-top: var(--top-padding-wrapper) ;
+      height: calc(100vh - var(--top-padding-section) - 116px);
+      @include hide-scroll;
+  }
+    &__page-title {
+      margin-bottom: 32px;
+      line-height: 104px;
+      font-size: 80px;
+    }
+    .h2, h3 {
+      margin-bottom: 16px;
+      margin-top: 32px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
