@@ -1,0 +1,22 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_27_206)">
+<g clip-path="url(#clip1_27_206)">
+<ellipse cx="28.0001" cy="6.57143" rx="3.57143" ry="3.57143" fill="#E0DCE7"/>
+<circle cx="28.0001" cy="49.4286" r="3.57143" fill="#E0DCE7"/>
+<circle cx="49.4286" cy="27.9999" r="3.57143" transform="rotate(90 49.4286 27.9999)" fill="#E0DCE7"/>
+<ellipse cx="6.57115" cy="27.9999" rx="3.57143" ry="3.57143" transform="rotate(90 6.57115 27.9999)" fill="#E0DCE7"/>
+<ellipse cx="12.8476" cy="12.8477" rx="3.57143" ry="3.57143" transform="rotate(-45 12.8476 12.8477)" fill="#E0DCE7"/>
+<circle cx="43.1523" cy="43.1523" r="3.57143" transform="rotate(-45 43.1523 43.1523)" fill="#E0DCE7"/>
+<ellipse cx="43.1523" cy="12.8476" rx="3.57143" ry="3.57143" transform="rotate(45 43.1523 12.8476)" fill="#E0DCE7"/>
+<ellipse cx="12.8477" cy="43.1523" rx="3.57143" ry="3.57143" transform="rotate(45 12.8477 43.1523)" fill="#E0DCE7"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_27_206">
+<rect width="50" height="50" fill="white" transform="translate(3 3)"/>
+</clipPath>
+<clipPath id="clip1_27_206">
+<rect width="50" height="50" fill="white" transform="translate(3 3)"/>
+</clipPath>
+</defs>
+</svg>
