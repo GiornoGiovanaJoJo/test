@@ -1,0 +1,43 @@
+{
+  "name": "king",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/gtm": "^2.4.0",
+    "@nuxtjs/redirect-module": "^0.3.1",
+    "@nuxtjs/robots": "^2.5.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/yandex-metrika": "^1.4.0",
+    "cookie-universal-nuxt": "^2.2.2",
+    "core-js": "^3.25.3",
+    "fullpage-nuxt-module": "^1.0.0",
+    "nuxt": "^2.15.8",
+    "nuxt-delay-hydration": "^0.4.7",
+    "portal-vue": "^2.1.7",
+    "vue": "^2.7.10",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-js-modal": "^1.3.34",
+    "vue-notification": "^1.3.20",
+    "vue-select": "^3.20.2",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/svg": "^0.1.12",
+    "@vue/language-plugin-pug": "^1.8.27",
+    "babel-core": "7.0.0-bridge.0",
+    "nuxt-purgecss": "^1.0.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "~1.32.8",
+    "sass-loader": "^10.1.0"
+  }
+}
